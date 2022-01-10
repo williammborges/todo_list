@@ -7,8 +7,6 @@ class TodoListPage extends StatefulWidget {
   _TodoListPageState createState() => _TodoListPageState();
 }
 
-//teste
-
 class _TodoListPageState extends State<TodoListPage> {
   TextEditingController _textEditingController = TextEditingController();
   List<String> tarefas = [];
