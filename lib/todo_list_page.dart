@@ -8,7 +8,7 @@ class TodoListPage extends StatefulWidget {
 }
 
 class _TodoListPageState extends State<TodoListPage> {
-  TextEditingController _textEditingController = TextEditingController();
+  final TextEditingController _textEditingController = TextEditingController();
   List<String> tarefas = [];
 
   @override
@@ -26,7 +26,7 @@ class _TodoListPageState extends State<TodoListPage> {
             TextField(
               controller: _textEditingController,
             ),
-            Container(
+            SizedBox(
               height: 400,
               child: ListView.separated(
                 itemCount: tarefas.length,
